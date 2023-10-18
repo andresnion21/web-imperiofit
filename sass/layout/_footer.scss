@@ -1,0 +1,108 @@
+footer{
+    border: solid black ;
+    color: whitesmoke;
+   
+
+    background-color: rgb(18, 17, 17);
+
+
+    
+    h2{
+       text-align: center;
+        font-size: 20px;
+        padding-top: 1rem;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 2rem;
+    }
+
+    .contacto{
+
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-left: 3%;
+        padding-right: 3%;
+
+        ul{
+            list-style: none;
+     
+            
+            li{
+                margin-bottom: 3rem;
+
+                &:hover{
+                    transform: scale(0.95);
+                    transition: 200ms;
+                }
+            
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                color: whitesmoke;
+                    
+               
+                }
+            
+            }
+        }
+
+        .mapa{
+
+            padding-bottom: 2rem;
+
+            iframe{
+
+                @include tablet{
+
+                    width: 80%;
+                    margin-left: 1rem;
+                }
+
+                @include mobile{
+                    width: 70%;
+                    margin-left: 2rem;
+                
+                }
+            }
+        }
+
+
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+
+        
+        
+        a{
+
+            margin-bottom: 1.5rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+           
+            &:hover{
+                transform: scale(0.93);
+                transition: 200ms;
+             }
+
+
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+
+    }
+
+    p{
+        text-align: center;
+        font-size: 10px;
+        padding: 5px;
+    }
+ }

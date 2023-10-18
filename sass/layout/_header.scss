@@ -1,0 +1,49 @@
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    .navbar{
+        background-color: rgb(18, 17, 17);
+        height: 4rem;
+
+        .container-fluid{
+            background-color: rgb(18, 17, 17);
+        }
+
+        .navbar-brand{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        a{
+            color: whitesmoke;
+            margin-left: 8%;
+            font-size: 20px;
+
+                &:hover{
+                    transform: scale(0.95);
+                    transition: 200ms;
+                }
+        }
+    
+        }
+    .collapse{
+        justify-content: flex-end;
+        padding-right: 4rem;
+        margin-right: 5%;
+
+            @include tablet{
+                padding-right: 0;
+                margin-right: 0;
+            }
+
+        .navbar-nav{
+            
+            a{
+                margin-right: 4rem;
+                color: whitesmoke;
+            }
+        }
+    }
+}

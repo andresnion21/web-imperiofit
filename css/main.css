@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #f1f1f1; }
+  body main .about {
+    color: whitesmoke;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../multimedia/imagen-cinco.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body main .about h1 {
+      margin-top: 6rem;
+      font-size: 60px;
+      font-weight: bold; }
+    body main .about h2 {
+      margin-bottom: 5rem; }
+    body main .about p {
+      width: 40%;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.482); }
+  body main .planes {
+    color: whitesmoke;
+    background-image: url("../multimedia/imagen-bici.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body main .planes h2 {
+      text-align: center;
+      padding-top: 3rem;
+      padding-bottom: 4rem; }
+    body main .planes .titulos {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+    body main .planes .carta {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body main .planes .carta .carta-planes {
+        border: solid  whitesmoke;
+        border-radius: 5px;
+        width: 30%;
+        margin: 2rem; }
+        body main .planes .carta .carta-planes div {
+          border-bottom: solid  whitesmoke;
+          background-color: rgba(0, 0, 0, 0.496); }
+          body main .planes .carta .carta-planes div h3 {
+            padding: 0.5rem; }
+          body main .planes .carta .carta-planes div p {
+            padding: 0.5rem; }
+  body main .nosotros {
+    color: whitesmoke;
+    background-color: #0b0b0b; }
+    body main .nosotros h2 {
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 1rem; }
+    body main .nosotros .carousel {
+      display: flex;
+      justify-content: center;
+      width: 85%;
+      margin-left: 7%; }
+      body main .nosotros .carousel .carousel-inner {
+        width: 70%;
+        padding: 2rem; }
+  body main .wsp {
+    background-color: #2e6329;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 3rem;
+    right: 3%;
+    padding: 10px;
+    animation: efecto 1.2s infinite; }
+    @media screen and (max-width: 992px) {
+      body main .wsp {
+        right: 4.5%; } }
+    body main .wsp:hover {
+      transform: scale(1.1);
+      transition: 300ms; }
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(249, 249, 249, 0.85); }
+  100% {
+    box-shadow: 0 0 0 25px rgba(213, 211, 211, 0); } }
+    body main .wsp .btn-wsp {
+      width: 70px;
+      height: 70px; }
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
+  header .navbar {
+    background-color: #121111;
+    height: 4rem; }
+    header .navbar .container-fluid {
+      background-color: #121111; }
+    header .navbar .navbar-brand {
+      font-size: 30px;
+      font-weight: bold; }
+    header .navbar a {
+      color: whitesmoke;
+      margin-left: 8%;
+      font-size: 20px; }
+      header .navbar a:hover {
+        transform: scale(0.95);
+        transition: 200ms; }
+  header .collapse {
+    justify-content: flex-end;
+    padding-right: 4rem;
+    margin-right: 5%; }
+    @media screen and (max-width: 992px) {
+      header .collapse {
+        padding-right: 0;
+        margin-right: 0; } }
+    header .collapse .navbar-nav a {
+      margin-right: 4rem;
+      color: whitesmoke; }
+
+footer {
+  border: solid black;
+  color: whitesmoke;
+  background-color: #121111; }
+  footer h2 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 1rem; }
+  footer h3 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 2rem; }
+  footer .contacto {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 3%;
+    padding-right: 3%; }
+    footer .contacto ul {
+      list-style: none; }
+      footer .contacto ul li {
+        margin-bottom: 3rem; }
+        footer .contacto ul li:hover {
+          transform: scale(0.95);
+          transition: 200ms; }
+        footer .contacto ul li a {
+          text-decoration: none;
+          font-size: 20px;
+          color: whitesmoke; }
+    footer .contacto .mapa {
+      padding-bottom: 2rem; }
+      @media screen and (max-width: 992px) {
+        footer .contacto .mapa iframe {
+          width: 80%;
+          margin-left: 1rem; } }
+      @media screen and (max-width: 576px) {
+        footer .contacto .mapa iframe {
+          width: 70%;
+          margin-left: 2rem; } }
+  footer .redes {
+    display: flex;
+    justify-content: center; }
+    footer .redes a {
+      margin-bottom: 1.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+      footer .redes a:hover {
+        transform: scale(0.93);
+        transition: 200ms; }
+      footer .redes a img {
+        width: 50px;
+        height: 50px; }
+  footer p {
+    text-align: center;
+    font-size: 10px;
+    padding: 5px; }
